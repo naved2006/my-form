@@ -1,0 +1,413 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111827;
+}
+
+.app {
+  width: 100%;
+  padding: 18px 28px 40px;
+}
+
+
+/* ================= SECTION ================= */
+
+.section {
+  width: 100%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.section h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.sub-title {
+  margin: 0 0 30px;
+  font-size: 15px;
+  color: #475569;
+}
+
+
+/* ================= FORM GRID ================= */
+
+.form-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 38px;
+  row-gap: 25px;
+}
+
+.three-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+
+/* ================= FORM GROUP ================= */
+
+.form-group {
+  width: 100%;
+}
+
+.form-group > label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.form-group > label span {
+  color: #dc2626;
+}
+
+
+/* ================= INPUTS ================= */
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  color: #111827;
+}
+
+.form-group textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  outline: none;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+
+/* ================= RADIO ================= */
+
+.radio-box {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.choice {
+  display: flex !important;
+  align-items: center;
+  gap: 7px;
+  margin: 0 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  cursor: pointer;
+}
+
+.choice input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+}
+
+
+/* ================= HOBBY ================= */
+
+.hobby-box {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  white-space: nowrap;
+}
+
+.choice input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.profile .sub-title {
+  margin-bottom: 30px;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.button-section {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.button-section button {
+  height: 38px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reset {
+  background: #020617;
+  color: white;
+}
+
+.add {
+  background: #4f20e8;
+  color: white;
+}
+
+.reset:hover {
+  background: #1e293b;
+}
+
+.add:hover {
+  background: #4320c7;
+}
+
+
+/* ================= USERS ================= */
+
+.users-area {
+  width: 100%;
+  padding-top: 25px;
+}
+
+
+/* ================= SEARCH ================= */
+
+.search-area {
+  width: 230px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-area input {
+  width: 230px;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.search-area input:focus {
+  border-color: #6366f1;
+}
+
+.user-count {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+
+/* ================= USERS TITLE ================= */
+
+.users-title {
+  text-align: center;
+  margin: 50px 0 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+
+/* ================= TABLE ================= */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #111827;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #182653;
+}
+
+th {
+  padding: 11px 9px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+td {
+  padding: 10px 9px;
+  font-size: 13px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.empty {
+  padding: 25px;
+  text-align: center;
+  color: #64748b;
+}
+
+
+/* ================= ACTION ================= */
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.actions button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+.delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+
+/* ================= PAGINATION ================= */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 5px;
+}
+
+.pagination button {
+  border: none;
+  border-radius: 5px;
+  padding: 7px 13px;
+  background: #4f20e8;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.showing {
+  margin-top: 7px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+
+/* ================= SMALL SCREEN ================= */
+
+@media (max-width: 1200px) {
+
+  .app {
+    padding: 15px 18px 30px;
+  }
+
+  .form-grid {
+    column-gap: 22px;
+    row-gap: 20px;
+  }
+
+  .three-grid {
+    gap: 20px;
+  }
+
+  .hobby-box {
+    gap: 10px;
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .three-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hobby-box {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 40px;
+  }
+
+  .app {
+    min-width: 0;
+  }
+}
